@@ -1,0 +1,32 @@
+extends layout
+
+block content
+  #output-container
+    textarea#output
+    a#close-output(href='#') Close
+
+  a#export.button(href='#') Export
+  #details
+    h2 Settings
+    form#details-form
+      input#name(placeholder='Hall Name')
+      textarea#description(placeholder='Description')
+    a#delete-hall.button(href='#') Remove
+    a#close.button(href='#') Close
+
+  #container
+    #map-wrapper
+      img#map
+
+  script(src='/javascripts/zepto.min.js')
+  script(src='/javascripts/underscore-min.js')
+  script(src='/javascripts/backbone-min.js')
+
+  script(src='/javascripts/data/hall.js')
+
+  script(src='/javascripts/views/dropbox.js')
+  script(src='/javascripts/views/map.js')
+  script(src='/javascripts/views/hall.js')
+  script(src='/javascripts/views/settings.js')
+
+  script(src='/javascripts/cartographer.js')

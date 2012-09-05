@@ -1,0 +1,16 @@
+{
+  "name": "sch-cartographer",
+  "version": "0.0.0-1",
+  "private": true,
+  "scripts": {
+    "start": "app.js"
+  },
+  "engines": {
+    "node": "v0.6.x"
+  },
+  "subdomain": "sch-cartographer",
+  "dependencies": {
+    "express": "3.0.0rc4",
+    "jade": "*"
+  }
+}
