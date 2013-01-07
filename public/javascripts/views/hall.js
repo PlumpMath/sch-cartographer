@@ -12,8 +12,8 @@ var HallView = Backbone.View.extend({
   render: function() {
     this.$el.attr('href', '#');
     this.$el.html(this.template).css({
-      left: this.model.get('x') - 10,
-      top: this.model.get('y') - 10
+      left: this.model.get('x') - 12,
+      top: this.model.get('y') - 12
     });
 
     $('#map-wrapper').append(this.el);

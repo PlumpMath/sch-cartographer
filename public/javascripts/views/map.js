@@ -16,7 +16,7 @@ var Map = Backbone.View.extend({
 
     var offset = $('#map-wrapper').offset();
     var positionX = e.pageX - offset.left;
-    var positionY = e.pageY - 50;
+    var positionY = e.pageY - offset.top;
 
     app.halls.add({ x: positionX, y: positionY });
   }
